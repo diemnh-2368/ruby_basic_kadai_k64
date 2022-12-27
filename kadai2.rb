@@ -14,8 +14,14 @@ olympics = [
 puts "第1~10回大会のオリンピック一覧"
 
 # each文を用いて、オリンピックの情報を出力してください
-
-
+for x in olympics
+  puts "-----------------------"
+  print "#{x[:year]}年"
+  puts "#{x[:city]}会"
+  if x[:note]
+    puts "豆知識：#{x[:note]}"
+  end
+end
 
 # 豆知識がある場合のみ豆知識について出力してください
 
