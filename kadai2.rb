@@ -17,7 +17,7 @@ olympics.each do |olympic|
     if olympic[:note] != nil
     puts "#{olympic[:year]}年 #{olympic[:city]}大会\n豆知識: #{olympic[:note]}"
     else
-      puts "#{olympic[:year]}年 #{olympic[:city]}大会"
+      puts "#{olympic[:year]}年 #{olympic[:city]}大会\n"
     end
 end
 
