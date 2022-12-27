@@ -14,11 +14,11 @@ olympics = [
 puts "第1~10回大会のオリンピック一覧"
 
 # each文を用いて、オリンピックの情報を出力してください
-
+olympics.each{|x| print x, "\n"}
 
 
 # 豆知識がある場合のみ豆知識について出力してください
-
+# olympics.find { |i|  i % 4 == 0 } 
 
 
   
