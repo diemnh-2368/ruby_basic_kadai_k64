@@ -4,9 +4,9 @@ year = gets.to_i
 # 以下の条件分岐に、新しい条件を追加してください
 if (year < 1896)
   puts "#{year}年にオリンピックはまだありません"
-elsif year == 2020
+elsif year == 2021
   puts "「コロナ䛾せいで1年遅れで2021年に開催されました」"
-elsif (year == 1916 || year == 1940 || year == 1944)
+elsif (year == 1916 || year == 1940 || year == 1944 || )
   puts "#{year}年にオリンピック䛿開催されませんでした"
 elsif (
   puts "#{year}年は夏季オリンピックが開催されました"
