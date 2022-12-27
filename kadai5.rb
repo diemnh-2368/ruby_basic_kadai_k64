@@ -1,8 +1,8 @@
 print "学生䛾人数を入力してください：";
-number = gets.to_i;
+number = gets.to_s;
 student = [];
-if (number == 0) 
-  puts "Wrong";
+if (!number.match(/\d+/))
+  puts "整数ではありません";
   exit;
 end
 x = 0;
