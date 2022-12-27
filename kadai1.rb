@@ -9,7 +9,7 @@ loop do
     puts "#{year}年にオリンピックは開催されませんでした"
   elsif year == 2021
     puts 'コロナのせいで1年遅れで2021年に開催されました'
-  elsif year % 4 == 0
+  elsif (year % 4) == 0
     puts "#{year}年は夏季オリンピックが開催されました"
   else
     puts "#{year}年は夏季オリンピックイヤーではありません"
