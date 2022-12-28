@@ -14,11 +14,17 @@ olympics = [
 puts "第1~10回大会のオリンピック一覧"
 
 # each文を用いて、オリンピックの情報を出力してください
-
-
+# olympics.each do |olympic| 
+#   puts olympic[:city]
+# end
 
 # 豆知識がある場合のみ豆知識について出力してください
-
+olympics.each do |olympic|
+  puts "------------\n#{olympic[:year]}年#{olympic[:city]}大会"
+  if(olympic[:note] != nil) 
+    puts olympic[:note]
+  end
+end
 
 
   

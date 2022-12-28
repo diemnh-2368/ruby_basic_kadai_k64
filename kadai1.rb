@@ -1,15 +1,15 @@
 # 好きな年を西暦（例：2000）で代入してください
-puts "好きな年を西暦（例：2000）で代入してください"
-year = gets.to_i
-# 以下の条件分岐に、新しい条件を追加してください
-if # 条件①
-  puts "#{year}年にオリンピックはまだありません"
-elsif # 条件②
-  # 該当の結果を出力してください
-elsif # 条件③ 
-  # 該当の結果を出力してください
-elsif # 条件④ 
-  puts "#{year}年は夏季オリンピックが開催されました"
+puts '好きな年を西暦（例：2000）で代入してください'
+year_int = gets.to_i
+
+if year_int >= 1896
+  if year_int % 4 == 0 && year_int != 1916 && year_int != 1940 && year_int != 1944 && year_int != 2020
+    puts "#{year_int}年は夏季オリンピックが開催されました。"
+  elsif year_int == 2021
+    puts "#{year_int}年は夏季オリンピックが開催されました。"
+  else
+    puts "#{year_int}年は夏季オリンピックが開催されませんした。"
+  end
 else
-  puts "#{year}年は夏季オリンピックイヤーではありません"
+  puts "#{year}年にオリンピックはまだありません"
 end
