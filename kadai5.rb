@@ -6,11 +6,13 @@ if (!number.match(/\d+/))
   exit;
 end
 x = 0;
+number = number.to_i;
 while x < number
-  puts "#{x + 1}番目䛾学生䛾名前䛿何ですか？";
+  puts "#{x + 1}番目の学生の名前は何ですか？";
   print "名前 > ";
   name = gets.chomp;
-  print "#{x + 1}番目の学生の学籍番号は何ですか？";
+  puts "#{x + 1}番目の学生の学籍番号は何ですか？";
+  print "学籍番号 > ";
   student_id = gets.chomp;
   student.push({:name => name, :number => student_id});
   x = x + 1;
