@@ -11,10 +11,18 @@ olympics = [
  {year: 1932, city: "ロサンゼルス"}
 ]
 
-puts "第1~10回大会のオリンピック一覧"
+puts "第1~10回大会のオリンピック一覧";
 
 # each文を用いて、オリンピックの情報を出力してください
-
+i = 0;
+olympics.each do |item|
+  print item[:year];
+  puts item[:city];
+  if (item[:note])
+    puts item[:note];
+  end
+  puts "-----------------"
+end
 
 
 # 豆知識がある場合のみ豆知識について出力してください
