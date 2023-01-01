@@ -1,5 +1,6 @@
 puts "学生䛾人数を入力してください > 3"
 n=gets.to_i
+
 students=[]
 
 for i in 1..n do
