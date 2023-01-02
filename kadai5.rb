@@ -6,6 +6,7 @@ info = []
 num.times do |i|
   student = {}
   puts "#{i + 1}番目の学生の名前はなんですか？"
+
   print "名前＞"
   student[:name] = gets.strip
 
